@@ -1,0 +1,13 @@
+/* =======================
+    hover
+======================= */
+@media screen and (min-width: $breakpoint-middle) {
+    .h-opa {
+        opacity: 1;
+        transition: 1s;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}

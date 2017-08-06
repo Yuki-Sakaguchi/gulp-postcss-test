@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/* =======================
+    import
+======================= */
+
+/* =======================
+    variable
+======================= */
+
+/* =======================
+    base
+======================= */
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* =======================
+    animation
+======================= */
+
+@-webkit-keyframes moveY {
+    0% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+    }
+    100% {
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+    }
+}
+
+@keyframes moveY {
+    0% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+    }
+    100% {
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+    }
+}
+
+/* =======================
+    common
+======================= */
+
+/* =======================
+    pc
+======================= */
+
+.box {
+    background: #000;
+}
+
+/* =======================
+    hover
+======================= */
+
+@media screen and (min-width: 780px) {
+    .h-opa {
+        opacity: 1;
+        -webkit-transition: 1s;
+        transition: 1s
+    }
+    .h-opa:hover {
+        opacity: 0.6;
+    }
+}
+
+/* =======================
+    tb
+======================= */
+
+@media screen and (max-width: 780px) {
+    .box {
+        background: #666;
+    }
+}
+
+/* =======================
+    sp
+======================= */
+
+@media screen and (max-width: 480px) {
+    .box {
+        background: #aaa;
+    }
+}

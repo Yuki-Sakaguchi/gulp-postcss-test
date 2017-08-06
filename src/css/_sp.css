@@ -1,0 +1,8 @@
+/* =======================
+    sp
+======================= */
+@media screen and (max-width: $breakpoint-small) {
+    .box {
+        background: #aaa;
+    }
+}
